@@ -1,0 +1,14 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 6rem;
+    min-height: 100vh;
+    justify-content: flex-start;
+    padding-top: 3rem;
+  }
+
+  .container{
+    padding: 0 22rem;
+  }

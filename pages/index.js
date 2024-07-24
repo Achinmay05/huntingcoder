@@ -21,27 +21,7 @@ export default function Home() {
           <h1>Hunting Coder</h1>
         </div>
 
-        <div className={styles.blogs}>
-          <h2>Latest Blogs</h2>
-          <div className={styles.blogItem}>
-            <h3>How to learn javascript in 2024?</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-          </div>
-        </div>
 
-        <div className={styles.blogs}>
-          <div className={styles.blogItem}>
-            <h3>How to learn javascript in 2024?</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-          </div>
-        </div>
-
-        <div className={styles.blogs}>
-          <div className={styles.blogItem}>
-            <h3>How to learn javascript in 2024?</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-          </div>
-        </div>
       </main>
     </>
   );
