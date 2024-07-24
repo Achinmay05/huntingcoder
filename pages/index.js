@@ -13,6 +13,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+<nav className={styles.mainnav}>
+  <ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Blog</li>
+    <li>Contact Us</li>
+  </ul>
+</nav>
+
       <main className={`${styles.main} ${inter.className}`}>
 
 
@@ -20,7 +30,29 @@ export default function Home() {
           <h1>Hunting Coder</h1>
         </div>
 
-        <div className={styles.grid}>
+        <div className="blogs">
+          <h2>Popular Blogs</h2>
+          <div className="blogItem">
+            <h3>How to learn javascript in 2024?</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+
+        <div className="blogs">
+          <div className="blogItem">
+            <h3>How to learn javascript in 2024?</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+
+        <div className="blogs">
+          <div className="blogItem">
+            <h3>How to learn javascript in 2024?</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+
+        {/* <div className={styles.grid}>
           <a
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
@@ -77,7 +109,7 @@ export default function Home() {
               with&nbsp;Vercel.
             </p>
           </a>
-        </div>
+        </div> */}
       </main>
     </>
   );
