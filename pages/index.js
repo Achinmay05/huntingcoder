@@ -14,14 +14,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-<nav className={styles.mainnav}>
-  <ul>
-    <li>Home</li>
-    <li>About</li>
-    <li>Blog</li>
-    <li>Contact Us</li>
-  </ul>
-</nav>
+      <nav className={styles.mainnav}>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Blog</li>
+          <li>Contact Us</li>
+        </ul>
+      </nav>
 
       <main className={`${styles.main} ${inter.className}`}>
 
