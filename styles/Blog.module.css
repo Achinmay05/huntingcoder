@@ -30,3 +30,7 @@
   .main h1 {
     margin-bottom: 1rem; /* Space below the h1 heading */
   }
+
+  .blogItemp{
+    max-width: 45vw;
+  }
