@@ -12,3 +12,14 @@
   .container{
     padding: 0 22rem;
   }
+
+  .blogContent{
+    padding: 10px;
+    width: 70rem;
+    font-size: 25px;
+  }
+
+  .title{
+    width: 20rem;
+  }
+

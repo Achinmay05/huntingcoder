@@ -9,7 +9,7 @@ const slug = () => {
         if (!router.isReady) return;
         const { slug } = router.query;
         fetch(`http://localhost:3000/api/getblogs?slug=${slug}`).then((a) => {
-            return a.json();
+             return a.json();
         }).then((parsed) => {
             setBlog(parsed)
         })
@@ -18,8 +18,8 @@ const slug = () => {
 
     return <div className={styles.container}>
         <main className={styles.main} >
-            <h1>{blog && blog.title}</h1>
-            <div>
+            <h1 className={styles.title}>{blog && blog.title}</h1>
+            <div className={styles.blogContent}>
                 {blog && blog.content}
             </div>
         </main>

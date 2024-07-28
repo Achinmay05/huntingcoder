@@ -7,7 +7,6 @@ const Blog = () => {
         fetch('http://localhost:3000/api/blogs').then((a) => {
             return a.json();
         }).then((parsed) => {
-            console.log(parsed)
             setBlogs(parsed)
         })
     }, [])
