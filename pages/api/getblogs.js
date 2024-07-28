@@ -9,7 +9,6 @@ export default function handler(req, res) {
     if (err) {
       res.status(500).json({ error: "No such Blog found !" })
     }
-    console.log('')
-    res.status(200).json(JSON.parse(data)); //converting string to object.
+    res.status(200).json(JSON.parse(data))
   })
 }

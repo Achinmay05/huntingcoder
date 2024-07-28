@@ -17,7 +17,7 @@ const Blog = () => {
             <main className={styles.main}>
                 {blogs.map((blogitem) => {
                     return <div className={styles.blogItem} key={blogitem.slug}>
-                        <Link href={`/blogpost/{blogitem.slug}`}>
+                        <Link href={`/blogpost/${blogitem.slug}`}>
                             <h3>{blogitem.title}</h3>
                             <p className={styles.blogItemp}>{blogitem.content.substr(0, 140)}...</p>
                         </Link>

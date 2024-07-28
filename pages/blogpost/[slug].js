@@ -1,19 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router'
 import styles from "@/styles/BlogPost.module.css";
 
 const slug = () => {
+    const [blog, setBlog] = useState();
     const router = useRouter();
-    const { slug } = router.query;
-    return (
-        <div className={styles.container}> 
-            <main className={styles.main} >
-            <h1>Title {slug}</h1>
-            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum magni quo repellat in saepe, autem corrupti consequuntur praesentium quia reprehenderit adipisci assumenda magnam consequatur odit sint aliquam fugit ratione repellendus!
+    useEffect(() => {
+        if (!router.isReady) return;
+        const { slug } = router.query;
+        fetch(`http://localhost:3000/api/getblogs?slug=${slug}`).then((a) => {
+            return a.json();
+        }).then((parsed) => {
+            setBlog(parsed)
+        })
+    }, [router.isReady])
+
+
+    return <div className={styles.container}>
+        <main className={styles.main} >
+            <h1>{blog && blog.title}</h1>
+            <div>
+                {blog && blog.content}
             </div>
-            </main>
-        </div>
-    )
-}
+        </main>
+    </div>
+
+};
 
 export default slug;
