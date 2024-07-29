@@ -6,6 +6,7 @@ const slug = () => {
     const [blog, setBlog] = useState();
     const router = useRouter();
     useEffect(() => {
+        //API call
         if (!router.isReady) return;
         const { slug } = router.query;
         fetch(`http://localhost:3000/api/getblogs?slug=${slug}`).then((a) => {
