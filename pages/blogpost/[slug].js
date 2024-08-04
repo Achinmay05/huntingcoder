@@ -26,7 +26,7 @@ export async function getStaticPaths() {
             { params: { slug: 'how-to-learn-javascript' } },
             { params: { slug: 'how-to-learn-nextjs' } },
         ],
-        fallback: false // false for 'blocking'
+        fallback: false // put false for 'blocking'
     };
 }
 
