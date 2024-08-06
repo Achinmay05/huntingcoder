@@ -43,4 +43,4 @@ export async function getStaticProps(context) {
     }
 }
 
-export default Slug;
+export default Slug; 
